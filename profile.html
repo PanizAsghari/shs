@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap - Prebuilt Layout</title>
+
+<!-- Bootstrap -->
+<link href="../../../css/bootstrap.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6" style="background-color:lavender;"><a href="#" id="select_logo"><img src="../img/profile/Unknown-person.gif" alt="set photo"><input type="file" id="logo"></a></div>
+    <div class="col-xs-6" style="background-color:lavenderblush;"><input name="fullName" onfocus="if (this.value=='نام و نام خانوادگی') this.value = ''" type="text" value="نام و نام خانوادگی"><br><br>
+ <div id="city" class="conetnt" style="display:none">
+ <input type="radio" name="city" value="city...">
+ <div id="industry" class="content">
+   <input type="text" name="industry">
+ </div>
+ </div>
+<div id="resume" class="content" style="display:none">
+  <input type="file" name="resume" value="Upload your resume">
+ </div>
+ <a id="btn1" onClick="javascript:showCity()">شهر خود را انتخاب کنید.</a><br>
+
+ <div class="city" id="cityDiv" style="display:none">
+   <select>
+     <option value="آذربایجان شرقی">آذربایجان شرقی</option>
+     <option value="آذربایجان غربی">آذربایجان غربی</option>
+     <option value="اردبیل">اردبیل</option>
+     <option value="اصفهان">اصفهان</option>
+     <option value="البرز">البرز</option>
+     <option value="ایلام">ایلام</option>
+     <option value="بوشهر">بوشهر</option>
+     <option value="تهران">تهران</option>
+     <option value="چهارمحال و بختیاری">چهارمحال و بختیاری</option>
+     <option value="خراسان جنوبی">خراسان جنوبی</option>
+     <option value="خراسان رضوی">خراسان رضوی</option>
+     <option value="خراسان شمالی">خراسان شمالی</option>
+     <option value="خوزستان">خوزستان</option>
+     <option value="زنجان">زنجان</option>
+     <option value="سمنان">سمنان</option>
+     <option value="سیستان و بلوچستان">سیستان و بلوچستان</option>
+     <option value="فارس">فارس</option>
+     <option value="قزوین">قزوین</option>
+     <option value="قم">قم</option>
+     <option value="کردستان">کردستان</option>
+     <option value="کرمان">کرمان</option>
+     <option value="کرمانشاه">کرمانشاه</option>
+     <option value="کهگیلویه و بویراحمد">کهگیلویه و بویراحمد</option>
+     <option value="گلستان">گلستان</option>
+     <option value="گیلان">گیلان</option>
+     <option value="لرستان">لرستان</option>
+     <option value="مازندران">مازندران</option>
+     <option value="مرکزی">مرکزی</option>
+     <option value="هرمزگان">هرمزگان</option>
+     <option value="همدان">همدان</option>
+     <option value="یزد">یزد</option>
+   </select>
+   <br>
+   <br>
+ </div>
+ <br><a onClick="javascript:showTitle()" >  موقعیت شغلی خود را توضیح دهید.</a>
+ <div id="title" style="display:none">
+ <input type="text" value="Title">
+ <br><br>
+ </div>
+ <br><br><a id="btn3" onClick="javaScript:showBtn()">Upload your resume.</a>
+ <div id="upResume" style="display:none">
+ <input type="file" value="Upload your resume">
+ </div>
+ <br>
+ <br>
+   <div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6" style="background-color:lavenderblush;">
+    <div class="boxed">
+    <img src="../img/profileEmployee/aboutMe/Chat-New-icon.png" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+  <a href="#">درباره من</a>
+  <p>Give us a summary of your background!</p>
+  </div>
+</div>
+    <div class="col-xs-6">
+    <div class="boxed">
+    <img src="../img/profileEmployee/skills/icon-eq.f08156d0af05.png" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">مهارتها</a>
+    <p>Tell us about tallents you've got!</p>
+    </div>
+    </div>
+    <div class="col-xs-6">
+    <br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/languages/stock-vector-logo-icon-illustration-language-travel-language-poster-design-with-diversity-famous-monuments-273216821.jpg" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">زبانها</a>
+    <p>What languages do you know??tell the employers!</p>
+    </div>
+    </div>
+    
+    <div class="col-xs-6">
+    <br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/volenteering/volunteer-hands2.jpg" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">خدمات داوطلبانه</a>
+    <p> Have you had any experience to make the world a better place?</p>
+    </div>
+    </div>
+    
+    <div class="col-xs-6">
+    <br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/honorsAndAwards/0513_HONORS-310x316.jpg" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">جوایز</a>
+    <p>Tell employers how flawless you are!</p>
+    </div>
+    </div>
+    
+    
+    <div class="col-xs-6">
+    <br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/testScore/Custom-Icon-Design-Pretty-Office-10-Test-paper.ico" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">نمرات</a>
+    <p>Any valuable courses you have passed their exams? Tell everyone.</p>
+    </div>
+    </div>
+    
+    
+    <div class="col-xs-6">
+    <br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/courses/Free-Online-Courses-EasyShiksha.png" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">دوره ها</a>
+    <p>What courses you have passed?</p>
+    </div>
+    </div>
+    
+    <div class="col-xs-6">
+    <br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/projects/projects icon.png" class="img-thumbnail" alt="Cinque Terre" width="50" height="50">
+    <a href="#">پروژه ها</a>
+    <p> What projects have you worked on?</p>
+    </div>
+    </div>
+    
+    
+
+    
+    
+    </div>
+  <div class="row">
+    <div class="col-xs-6"><br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/publications/books.png" alt="Cinque Terre" width="50" height="50">
+    <a href="#">نشریات</a>
+    <p>SHOW OFF!</p>
+    </div></div>
+    <div class="col-xs-6"><br>
+    <div class="boxed">
+    <img src="../img/profileEmployee/interests/images (1).jpg" alt="Cinque Terre" width="50" height="50">
+    <a href="#">علایق</a>
+    <p> What are your personal fields of interest?</p>
+    </div></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+    <div class="boxed">
+    <img src="../img/profileEmployee/education/Oxygen-Icons.org-Oxygen-Categories-applications-education-school.ico" alt="Cinque Terre" width="50" height="50">
+    <a href="#">تحصیلات</a>
+    <p>Say about your educational backround.</p>
+    </div>
+    </div>
+    <div class="col-xs-6">
+    <div class="boxed">
+    <img src="../img/profileEmployee/experience/bamba-experience.jpg" alt="Cinque Terre" width="50" height="50">
+    <a href="#">تجربیات</a>
+    <p> Add some experience so better opportunities come your way.</p>
+</div>
+</div>
+  <div class="row">
+    <div class="col-xs-6">
+    <div class="boxed">
+    <img src="../img/profileEmployee/contact info/contact.jpg" alt="Cinque Terre" width="50" height="50">
+    <a href="#">اطلاعات تماس</a>
+    <p>That is how employers can contact you.</p>
+    </div>
+    </div>
+    <div class="col-xs-6">
+    <div class="boxed">
+    <img src="../img/profileEmployee/personalDetails/personal.png"  alt="Cinque Terre" width="50" height="50">
+    <a href="#">سایر اطلاعات</a>
+    <p>Share any other details you'd like employers to know.</p>
+    </div>
+    </div>
+</div>
+  
+   </div>
+</div>
+    </div>
+  </div>
+    
+    
+<script type="text/javascript">
+
+$("#logo").css('opacity','0');
+
+$("#select_logo").click(function(e){
+   e.preventDefault();
+   $("#logo").trigger('click');
+});
+
+     function showCity() {
+   document.getElementById('cityDiv').style.display = "block";
+}              
+
+ function showTitle() {
+   document.getElementById('title').style.display = "block";
+}      
+
+function showBtn() {
+   document.getElementById('upResume').style.display = "block";
+}              
+
+</script>
+</body>
+</html>
