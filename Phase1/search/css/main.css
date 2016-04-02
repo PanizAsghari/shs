@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color:#eee;
+}
+
+
+.First{
+font-family:Bnazanin;
+}
+
+.Second
+{
+	font-family:Tahoma;
+	}
+
+.form-inline .form-group {
+	margin-left:10px;
+}
